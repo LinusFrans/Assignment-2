@@ -1,0 +1,137 @@
+:root {
+    --text-color: #F7F7F7;
+    --text-font: "Trebuchet MS";
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    background-color: #F7F7F7;
+    margin-bottom: 90px;
+}
+
+h1, h2{
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+header {
+    margin-top: 0;
+    height: 70px;
+    background-color: #323643;
+    display: flex;
+    width: 100%;
+}
+
+header p {
+    margin-left: 15px;
+}
+
+/* FORM */
+
+.questionContainer>input {
+    margin-bottom: 8px;
+}
+
+form>input {
+    font-size: 14px;
+    font-family: var(--text-font);
+    color: #323643;
+}
+
+label {
+    font-family: var(--text-font);
+    color: #323643;
+    font-size: 17px;
+}
+
+h1 {
+    font-family: var(--text-font);
+    color: #323643;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#informationForm {
+    margin-bottom: 50px;
+}
+
+form>#submitBtn {
+    background-color: #323643;
+    color: var(--text-color);
+    width: 85px;
+    height: 27px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form>#submitBtn:hover {
+    background-color: #545B70;
+}
+
+form>#submitBtn:active {
+    background-color: #656D87;
+}
+
+#textareaForm {
+    resize: none;
+    height: 150px;
+    width: 20%;
+    font-size: 14px;
+    font-family: var(--text-font);
+    color: #323643;
+}
+
+.questionContainer {
+    padding: 7px 7px 7px 7px;
+    border: #323643;
+    border-style: solid;
+    border-width: 1px;
+    width: 20%;
+    margin-bottom: 35px;
+    margin-top: 7px;
+}
+
+.questionLabel {
+    font-family: var(--text-font);
+    color: #323643;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #323643;
+    height: 70px;
+    width: 100%;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+}
+
+a.fa.fa-github::before, .fa.fa-facebook::before, a.fa.fa-twitter::before {
+    margin-left: 15px;
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+#copyrightText {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--text-color);
+}
