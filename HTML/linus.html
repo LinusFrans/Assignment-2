@@ -6,77 +6,67 @@
         <title>Home</title>
         <link rel="stylesheet" href="../CSS/linus.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="../JS/linus.js"></script>
     </head>
     <body>
         <header>
             <p>Linus<br>Fransson</p>
         </header>
-        <div>
-            <form id="informationForm">
+        <div id="quiz">
+            <form>
                 <h1>Quiz!</h1>
-                <label>First name:</label><br>
-                <input type="text"><br><br>
-                <label>Last name:</label><br>
-                <input type="text"><br><br>
-                <label>Email:</label><br>
-                <input type="email"><br><br>
+                <label class="required">First name:</label><br>
+                <input type="text" id="nameInp"><br><br>
+                <label class="required">Last name:</label><br>
+                <input type="text" id="lastNameInp"><br><br>
+                <label class="required">Email:</label><br>
+                <input type="email" id="emailInp"><br><br>
             </form>
             <form>
-                <label class="questionLabel">Question 1. ?:</label>
+                <label class="questionLabel required">Which CSS property is used to change the text color of an element?</label>
                 <div class="questionContainer">
                     <input name="radio1" type="radio" value="1">
-                    <label>Ans 1:</label><br>
+                    <label>font-color</label><br>
                     <input name="radio1" type="radio" value="2">
-                    <label>Ans 2:</label><br>
+                    <label>text-color</label><br>
                     <input name="radio1" type="radio" value="3">
-                    <label>Ans 3:</label><br>
+                    <label>color</label><br>
                 </div>
 
-                <label class="questionLabel">Question 2. ?:</label>
+                <label class="questionLabel">Which of the following are valid HTML5 input types?</label>
                 <div class="questionContainer">
                     <input name="checkbox2" type="checkbox" value="1">
-                    <label>Ans 1:</label><br>
+                    <label>text</label><br>
                     <input name="checkbox2" type="checkbox" value="2">
-                    <label>Ans 2:</label><br>
+                    <label>date</label><br>
                     <input name="checkbox2" type="checkbox" value="3">
-                    <label>Ans 3:</label><br>
+                    <label>password</label><br>
                 </div>
 
-                <label class="questionLabel">Question 3. ?:</label>
+                <label class="questionLabel required">Which symbol is used to select an ID in CSS?</label>
                 <div class="questionContainer">
-                    <input name="checkbox3" type="checkbox" value="1">
-                    <label>Ans 1:</label><br>
-                    <input name="checkbox3" type="checkbox" value="2">
-                    <label>Ans 2:</label><br>
-                    <input name="checkbox3" type="checkbox" value="3">
-                    <label>Ans 3:</label><br>
+                    <input name="radio3" type="radio" value="1">
+                    <label>#</label><br>
+                    <input name="radio3" type="radio" value="2">
+                    <label>.</label><br>
+                    <input name="radio3" type="radio" value="3">
+                    <label>@</label><br>
                 </div>
 
-                <label class="questionLabel">Question 4. ?:</label>
+                <label class="questionLabel">Which of these programming languages are used in web development?</label>
                 <div class="questionContainer">
-                    <input name="radio4" type="radio" value="1">
-                    <label>Ans 1:</label><br>
-                    <input name="radio4" type="radio" value="2">
-                    <label>Ans 2:</label><br>
-                    <input name="radio4" type="radio" value="3">
-                    <label>Ans 3:</label><br>
+                    <select id="select4">
+                        <option value="1">None</option>
+                        <option value="2">JavaScript</option>
+                        <option value="3">Python</option>
+                        <option value="4">C#</option>
+                        <option value="5">Java</option>
+                    </select>
                 </div>
 
-                <label class="questionLabel">Question 5. ?:</label>
-                <div class="questionContainer">
-                    <input name="radio5" type="radio" value="1">
-                    <label>Ans 1:</label><br>
-                    <input name="radio5" type="radio" value="2">
-                    <label>Ans 2:</label><br>
-                    <input name="radio5" type="radio" value="3">
-                    <label>Ans 3:</label><br>
-                </div>
+                <label class="questionLabel">What do you use together with HTML to change the look of a website?</label><br>
+                <input type="text" id="textfield5"><br><br>
 
-
-                <label class="questionLabel">What did you think about the quiz?</label><br>
-                <textarea id="textareaForm"></textarea><br><br>
-                <input id="submitBtn" type="submit" value="Submit">
+                <input id="submitBtn" type="button" value="Submit">
             </form>
         </div>
         <footer>
@@ -90,4 +80,5 @@
             </div>
         </footer>
     </body>
+    <script src="../JS/linus.js"></script>
 </html>
