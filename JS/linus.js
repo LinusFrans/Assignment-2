@@ -10,6 +10,7 @@ var select4 = document.getElementById('select4');
 var textfield5 = document.getElementById('textfield5');
 
 var question1answered = false;
+var question2answered = false;
 var question3answered = false;
 
 const errorMsg = document.createElement("div");
@@ -29,8 +30,13 @@ submit.onclick = function() {
     } else {
         question1answered = false;
     }
-    if (checkbox2[0].checked && checkbox2[1].checked && checkbox2[2].checked) {
-        score++;
+    if (checkbox2[0].checked || checkbox2[1].checked || checkbox2[2].checked) {
+        if (checkbox2[0].checked && checkbox2[1].checked && checkbox2[2].checked) {
+            score++;
+        }
+        question2answered = true;
+    } else {
+        question2answered = false;
     }
     if (getValue(radio3) != undefined) {
         if (getValue(radio3) == 1) {
@@ -46,7 +52,7 @@ submit.onclick = function() {
     if (textfield5.value.toUpperCase() == "CSS") {
         score++;
     }
-    if (question1answered && question3answered) { // check if the required questions are answered
+    if (question1answered && question3answered && question2answered) { // check if the required questions are answered
         if (!validateName(nameInp.value)) {
             // set error msg and remove score element if its there
             errorMsg.innerHTML = "Invalid name.";
